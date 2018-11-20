@@ -7,7 +7,7 @@ def read(fname):
 
 
 setup(name='korr',
-      version='0.1.0',
+      version='0.2.0',
       description='collection of utility functions for correlation analysis',
       long_description=read('README.md'),
       long_description_content_type='text/markdown',
@@ -21,6 +21,7 @@ setup(name='korr',
           'nose>=1.3.7',
           'numpy>=1.14.5',
           'scipy>=1.1.0',
-          'pandas>=0.23.4'],
+          'pandas>=0.23.4',
+          'matplotlib>=3.0.0'],
       python_requires='>=3.6',
       zip_safe=False)
