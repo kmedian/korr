@@ -2,7 +2,7 @@
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/kmedian/korr/master?urlpath=lab)
 
 # korr
-
+collection of utility functions for correlation analysis
 
 
 ## Table of Contents
