@@ -24,6 +24,21 @@ pip install korr
 ## Usage
 Check the [examples](examples) folder for notebooks.
 
+Compute correlation matrix and its p-values
+
+* [pearson]() -- Pearson/Sample correlation (interval- and ratio-scale data)
+* [kendall]() -- Kendall's tau rank correlation (ordinal data)
+* [spearman]() -- Spearman rho rank correlation (ordinal data)
+
+EDA, Dig deeper into results
+
+* [flatten]() -- A table (pandas) with one row for each correlation pairs with the variable indicies, corr., p-value. For example, try to find "good" cutoffs with `corr_vs_pval` and then look up the variable indicies with `flatten` afterwards.
+* [corr_vs_pval]()  -- Histogram to find p-value cutoffs (alpha) for a) highly correlated pairs, b) unrelated pairs, c) the mixed results. 
+* [bracket_pval]() -- Histogram with more fine-grained p-value brackets. 
+
+Utility functions
+
+* [find_unrelated]() -- Return variable indicies of unrelated pairs (in terms of insignificant p-value)
 
 ## Commands
 * Check syntax: `flake8 --ignore=F401`
