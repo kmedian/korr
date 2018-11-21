@@ -8,7 +8,7 @@ def corr_vs_pval(r, pval, plim=0.01, rlim=0.4, dpi=96):
     Parameters:
     -----------
     r : np.ndarray
-        Correlation coefficient matrix. 
+        Correlation coefficient matrix.
         The upper triangular elements are extracted if a NxN is provided.
         Otherwise provide a plain vector.
 
@@ -20,12 +20,12 @@ def corr_vs_pval(r, pval, plim=0.01, rlim=0.4, dpi=96):
         "significant" or not. (Default: 0.01 or 1%)
 
     rlim : float
-        Descretionary threshold to judge if an absolute correlation 
+        Descretionary threshold to judge if an absolute correlation
         coefficient is big enough. (Default: 0.4)
 
     dpi : int
         Set the resolution of the matplotlib graphics.
-    
+
     Return:
     -------
     fig, ax
