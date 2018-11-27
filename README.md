@@ -26,19 +26,22 @@ Check the [examples](examples) folder for notebooks.
 
 Compute correlation matrix and its p-values
 
-* [pearson]() -- Pearson/Sample correlation (interval- and ratio-scale data)
-* [kendall]() -- Kendall's tau rank correlation (ordinal data)
-* [spearman]() -- Spearman rho rank correlation (ordinal data)
+* [pearson](https://github.com/kmedian/korr/blob/master/examples/pearson.ipynb) -- Pearson/Sample correlation (interval- and ratio-scale data)
+* [kendall](https://github.com/kmedian/korr/blob/master/examples/kendall.ipynb) -- Kendall's tau rank correlation (ordinal data)
+* [spearman](https://github.com/kmedian/korr/blob/master/examples/spearman.ipynb) -- Spearman rho rank correlation (ordinal data)
+* [mcc](https://github.com/kmedian/korr/blob/master/examples/mcc%20(Matthews%20correlation).ipynb) -- Matthews correlation coefficient between binary variables 
 
 EDA, Dig deeper into results
 
-* [flatten]() -- A table (pandas) with one row for each correlation pairs with the variable indicies, corr., p-value. For example, try to find "good" cutoffs with `corr_vs_pval` and then look up the variable indicies with `flatten` afterwards.
-* [corr_vs_pval]()  -- Histogram to find p-value cutoffs (alpha) for a) highly correlated pairs, b) unrelated pairs, c) the mixed results. 
-* [bracket_pval]() -- Histogram with more fine-grained p-value brackets. 
+* [flatten](https://github.com/kmedian/korr/blob/master/examples/flatten.ipynb) -- A table (pandas) with one row for each correlation pairs with the variable indicies, corr., p-value. For example, try to find "good" cutoffs with `corr_vs_pval` and then look up the variable indicies with `flatten` afterwards.
+* [corr_vs_pval](https://github.com/kmedian/korr/blob/master/examples/corr_vs_pval.ipynb)  -- Histogram to find p-value cutoffs (alpha) for a) highly correlated pairs, b) unrelated pairs, c) the mixed results. 
+* [bracket_pval](hhttps://github.com/kmedian/korr/blob/master/examples/bracket_pval.ipynb) -- Histogram with more fine-grained p-value brackets. 
+* [corrgram](https://github.com/kmedian/korr/blob/master/examples/corrgram.ipynb) -- Correlogram, heatmap of correlations with p-values in brackets
 
 Utility functions
 
-* [find_unrelated]() -- Return variable indicies of unrelated pairs (in terms of insignificant p-value)
+* [find_unrelated](https://github.com/kmedian/korr/blob/master/examples/find_unrelated.ipynb) -- Return variable indicies of unrelated pairs (in terms of insignificant p-value)
+* [confusion](https://github.com/kmedian/korr/blob/master/examples/confusion.ipynb) -- Confusion matrix. Required for Matthews correlation (mcc) and is a bitter faster than sklearn's 
 
 ## Commands
 * Check syntax: `flake8 --ignore=F401`
