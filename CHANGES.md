@@ -1,3 +1,8 @@
+# 0.4.0 / 2018-11-27
+
+  * Confusion matrix 
+  * Matthews correlation
+
 # 0.3.0 / 2018-11-21
 
   * corr_vs_pval and bracket_pval added
