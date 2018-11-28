@@ -1,3 +1,8 @@
+# 0.5.0 / 2018-11/-28
+
+  * slice_xy, slice a correlation and p-value matrix of a (y,X) dataset
+    into a (y,x_i) vector and (x_j, x_k) matrices
+
 # 0.4.1 / 2018-11/-28
 
   * confusion_to_mcc, Use the confusion matrix as input as well as the four metrics

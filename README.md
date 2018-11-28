@@ -34,6 +34,7 @@ Compute correlation matrix and its p-values
 EDA, Dig deeper into results
 
 * [flatten](https://github.com/kmedian/korr/blob/master/examples/flatten.ipynb) -- A table (pandas) with one row for each correlation pairs with the variable indicies, corr., p-value. For example, try to find "good" cutoffs with `corr_vs_pval` and then look up the variable indicies with `flatten` afterwards.
+* [slice_xy](https://github.com/kmedian/korr/blob/master/examples/slice_xy.ipynb) -- slice a correlation and p-value matrix of a (y,X) dataset into a (y,x_i) vector and (x_j, x_k) matrices
 * [corr_vs_pval](https://github.com/kmedian/korr/blob/master/examples/corr_vs_pval.ipynb)  -- Histogram to find p-value cutoffs (alpha) for a) highly correlated pairs, b) unrelated pairs, c) the mixed results. 
 * [bracket_pval](hhttps://github.com/kmedian/korr/blob/master/examples/bracket_pval.ipynb) -- Histogram with more fine-grained p-value brackets. 
 * [corrgram](https://github.com/kmedian/korr/blob/master/examples/corrgram.ipynb) -- Correlogram, heatmap of correlations with p-values in brackets
