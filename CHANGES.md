@@ -1,3 +1,7 @@
+# 0.5.2 / 2018-11/-28
+
+  * slice_yx, output vectors as (n,) vectors instead of (n,1)
+
 # 0.5.0 / 2018-11/-28
 
   * slice_yx, slice a correlation and p-value matrix of a (y,X) dataset
