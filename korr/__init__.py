@@ -9,3 +9,5 @@ from .bracket_pval import bracket_pval
 from .confusion import confusion
 from .mcc import mcc, confusion_to_mcc
 from .slice_yx import slice_yx
+from .find_best import find_best
+from .find_worst import find_worst

@@ -41,6 +41,8 @@ EDA, Dig deeper into results
 
 Utility functions
 
+* `find_best` -- Find the N "best", i.e. high and most significant, correlations
+* `find_worst` -- Find the N "worst", i.e. insignificant/random and low, correlations
 * [find_unrelated](https://github.com/kmedian/korr/blob/master/examples/find_unrelated.ipynb) -- Return variable indicies of unrelated pairs (in terms of insignificant p-value)
 * [confusion](https://github.com/kmedian/korr/blob/master/examples/confusion.ipynb) -- Confusion matrix. Required for Matthews correlation (mcc) and is a bitter faster than sklearn's 
 

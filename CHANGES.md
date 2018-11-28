@@ -1,3 +1,7 @@
+# 0.6.0 / 2018-11/-28
+
+  * Search rule to find the best and worst correlations
+
 # 0.5.2 / 2018-11/-28
 
   * slice_yx, output vectors as (n,) vectors instead of (n,1)
