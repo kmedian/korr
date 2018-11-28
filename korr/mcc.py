@@ -3,7 +3,35 @@ import scipy.stats
 import numpy as np
 
 
-def confusion_to_mcc(tn, fp, fn, tp):
+def confusion_to_mcc(*args):
+    """Convert the confusion matrix to the Matthews correlation coefficient
+
+    Parameters:
+    -----------
+    cm : ndarray
+        2x2 confusion matrix with np.array([[tn, fp], [fn, tp]])
+    
+    tn, fp, fn, tp : float
+        four scalar variables
+        - tn : number of true negatives
+        - fp : number of false positives
+        - fn : number of false negatives
+        - tp : number of true positives
+    
+    Return:
+    -------
+    r : float
+        Matthews correlation coefficient
+    """
+    if len(args) is 1:
+        tn, fp, fn, tp = args[0].ravel().astype(float)
+    elif len(args) is 4:
+        tn, fp, fn, tp = [float(a) for a in args]
+    else:
+        raise Exception((
+            "Input argument is not an 2x2 matrix, "
+            "nor 4 elements tn, fp, fn, tp."))
+
     return (tp * tn - fp * fn) / np.sqrt(
         (tp + fp) * (tp + fn) * (tn + fp) * (tn + fn))
 
@@ -70,7 +98,7 @@ def mcc(x, axis=0):
     for i in range(0, c):
         for j in range(i + 1, c):
             cm = confusion(x[:, i], x[:, j])
-            r[i, j] = confusion_to_mcc(*cm.ravel().astype(float))
+            r[i, j] = confusion_to_mcc(cm)
             r[j, i] = r[i, j]
             p[i, j] = 1 - scipy.stats.chi2.cdf(r[i, j] * r[i, j] * n, 1)
             p[j, i] = p[i, j]

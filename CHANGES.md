@@ -1,3 +1,7 @@
+# 0.4.1 / 2018-11/-28
+
+  * confusion_to_mcc, Use the confusion matrix as input as well as the four metrics
+
 # 0.4.0 / 2018-11-27
 
   * Confusion matrix 
