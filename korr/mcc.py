@@ -10,14 +10,14 @@ def confusion_to_mcc(*args):
     -----------
     cm : ndarray
         2x2 confusion matrix with np.array([[tn, fp], [fn, tp]])
-    
+
     tn, fp, fn, tp : float
         four scalar variables
         - tn : number of true negatives
         - fp : number of false positives
         - fn : number of false negatives
         - tp : number of true positives
-    
+
     Return:
     -------
     r : float
