@@ -1,5 +1,5 @@
 
-def slice_xy(r, pval, ydim=1):
+def slice_yx(r, pval, ydim=1):
     """slice a correlation and p-value matrix of a (y,X) dataset
     into a (y,x_i) vector and (x_j, x_k) matrices
 
@@ -33,7 +33,7 @@ def slice_xy(r, pval, ydim=1):
     -------
         import korr
         r, pval = korr.mcc(np.c_[y, X])
-        y_r, y_pval, x_r, x_pval = slice_xy(r, pval, ydim=1)
+        y_r, y_pval, x_r, x_pval = slice_yx(r, pval, ydim=1)
         print(np.c_[y_r, y_pval])
         korr.corrgram(x_r, x_pval)
     """
