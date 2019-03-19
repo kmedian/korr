@@ -36,7 +36,7 @@ def confusion_to_mcc(*args):
         (tp + fp) * (tp + fn) * (tn + fp) * (tn + fn))
 
 
-def mcc(x, axis=0):
+def mcc(x, axis=0, autocorrect=False):
     """Matthews correlation
 
     Parameters
@@ -47,6 +47,11 @@ def mcc(x, axis=0):
     axis : int, optional
         Variables as columns is the default (axis=0). If variables
         are in the rows use axis=1
+
+    autocorrect : bool, optional
+        If all predictions are True or all are False, then MCC
+        returns np.NaN
+        Set autocorrect=True to return a 0.0 correlation instead.
 
     Returns
     -------
@@ -102,5 +107,10 @@ def mcc(x, axis=0):
             r[j, i] = r[i, j]
             p[i, j] = 1 - scipy.stats.chi2.cdf(r[i, j] * r[i, j] * n, 1)
             p[j, i] = p[i, j]
+
+    # replace NaN with 0.0
+    if autocorrect:
+        r = np.nan_to_num(r)
+
     # done
     return r, p

@@ -7,4 +7,5 @@ install:
   - pip install -r requirements.txt
 script:
   - flake8 --ignore=F401
+  - python -W ignore -m unittest discover
 cache: pip
