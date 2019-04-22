@@ -1,3 +1,7 @@
+# 0.7.0 / 2019-04-22
+
+  * mincorr algorithm added to find a given number of low-correlated features
+
 # 0.6.1 / 2019-03-19
 
   * Fix #1 "autocorrect option for mcc"
