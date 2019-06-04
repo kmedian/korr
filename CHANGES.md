@@ -1,3 +1,7 @@
+# 0.8.0 / 2019-06-04
+
+  * bootstrap samples for correlation estimation
+
 # 0.7.0 / 2019-04-22
 
   * mincorr algorithm added to find a given number of low-correlated features

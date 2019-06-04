@@ -12,3 +12,4 @@ from .slice_yx import slice_yx
 from .find_best import find_best
 from .find_worst import find_worst
 from .mincorr import mincorr, mincorr_result_check
+from .bootcorr import bootcorr
