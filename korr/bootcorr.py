@@ -44,12 +44,16 @@ def bootcorr(X, n_draws=30, subsample=0.7, replace=True,
     pval3 = np.zeros(shape=(n_draws, n_features, n_features))
     pval3[:] = np.nan
 
+    oob = []
+    rng = set(range(len(X)))
+
     # set seed
     np.random.seed(random_state)
 
     for d in range(n_draws):
         idx = np.random.choice(range(n_samples), size=n_size, replace=replace)
+        oob.append(list(rng - set(idx)))
         rho3[d], pval3[d] = corr_fn(X[idx, :])
 
     # done
-    return rho3, pval3
+    return rho3, pval3, oob

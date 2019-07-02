@@ -1,3 +1,7 @@
+# 0.8.1 / 2019-07-02
+
+  * return rows indicies of out-of-bag samples in bootcorr
+
 # 0.8.0 / 2019-06-04
 
   * bootstrap samples for correlation estimation
