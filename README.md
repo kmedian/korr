@@ -22,7 +22,7 @@ pip install korr
 
 
 ## Usage
-Check the [examples](examples) folder for notebooks.
+Check the [examples](https://github.com/kmedian/korr/tree/master/examples) folder for notebooks.
 
 Compute correlation matrix and its p-values
 
@@ -41,10 +41,19 @@ EDA, Dig deeper into results
 
 Utility functions
 
+* [confusion](https://github.com/kmedian/korr/blob/master/examples/confusion.ipynb) -- Confusion matrix. Required for Matthews correlation (mcc) and is a bitter faster than sklearn's 
+
+Parameter Stability
+
+* [bootcorr](https://github.com/kmedian/korr/blob/master/examples/bootcorr.ipynb) -- Estimate multiple correlation matrices based on bootstrapped samples. From there you can assess how stable correlation estimates are (how sensitive against in-sample variation). For example, stable estimates are good candidates for modeling, and unstable correlation pairs are good candidates for P-hacking and non-reproducibility.
+
+Variable Selection, Search Functions
+
+* [mincorr](https://github.com/kmedian/korr/blob/master/examples/mincorr.ipynb) -- From all estimated correlation pairs, pick a given `n=3,5,..` of variables with low and insignificant correlations among each other. (See [binsel](https://github.com/kmedian/binsel) package for an application.)
 * `find_best` -- Find the N "best", i.e. high and most significant, correlations
 * `find_worst` -- Find the N "worst", i.e. insignificant/random and low, correlations
 * [find_unrelated](https://github.com/kmedian/korr/blob/master/examples/find_unrelated.ipynb) -- Return variable indicies of unrelated pairs (in terms of insignificant p-value)
-* [confusion](https://github.com/kmedian/korr/blob/master/examples/confusion.ipynb) -- Confusion matrix. Required for Matthews correlation (mcc) and is a bitter faster than sklearn's 
+
 
 ## Commands
 * Check syntax: `flake8 --ignore=F401`

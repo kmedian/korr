@@ -1,3 +1,8 @@
+# 0.8.2 / 2019-08-15
+
+  * flake F632 syntax fix
+  * Readme updated
+
 # 0.8.1 / 2019-07-02
 
   * return rows indicies of out-of-bag samples in bootcorr
