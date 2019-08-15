@@ -23,9 +23,9 @@ def confusion_to_mcc(*args):
     r : float
         Matthews correlation coefficient
     """
-    if len(args) is 1:
+    if len(args) == 1:
         tn, fp, fn, tp = args[0].ravel().astype(float)
-    elif len(args) is 4:
+    elif len(args) == 4:
         tn, fp, fn, tp = [float(a) for a in args]
     else:
         raise Exception((
@@ -84,7 +84,7 @@ def mcc(x, axis=0, autocorrect=False):
         r = matthews_corrcoef(y_true, y_pred)
     """
     # transpose if axis<>0
-    if axis is not 0:
+    if axis != 0:
         x = x.T
 
     # read dimensions and

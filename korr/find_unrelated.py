@@ -11,7 +11,7 @@ def find_unrelated(x, plim=0.1, axis=0):
 
     """
     # transpose if axis<>0
-    if axis is not 0:
+    if axis != 0:
         x = x.T
 
     # read dimensions and allocate variables

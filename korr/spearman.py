@@ -23,7 +23,7 @@ def spearman(x, axis=0):
         p-values
     """
     # transpose if axis<>0
-    if axis is not 0:
+    if axis != 0:
         x = x.T
 
     # read dimensions and

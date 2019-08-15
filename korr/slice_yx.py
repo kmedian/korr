@@ -37,7 +37,7 @@ def slice_yx(r, pval, ydim=1):
         print(np.c_[y_r, y_pval])
         korr.corrgram(x_r, x_pval)
     """
-    if ydim is 1:
+    if ydim == 1:
         return (
             r[1:, :1].reshape(-1, ), pval[1:, :1].reshape(-1, ),
             r[1:, 1:], pval[1:, 1:])
