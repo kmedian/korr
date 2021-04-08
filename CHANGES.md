@@ -1,3 +1,7 @@
+# 0.8.3 / 2020-04-08
+
+  * matplotlib error corrected for corrgram
+
 # 0.8.2 / 2019-08-15
 
   * flake F632 syntax fix
