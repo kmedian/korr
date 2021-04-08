@@ -1,5 +1,6 @@
 
 import matplotlib.pyplot as plt
+import matplotlib
 import numpy as np
 
 
@@ -37,7 +38,7 @@ def corrgram(r, pval, varnames=None, dpi=96, cmap='RdBu'):
 
     # colorbar
     cbar = ax.figure.colorbar(im, fraction=0.046, pad=0.04)
-    cbar.set_clim(vmin=-1, vmax=+1)
+    matplotlib.cm.ScalarMappable().set_clim(vmin=-1, vmax=+1)
     cbar.ax.set_ylabel('correlation coefficient', rotation=-90, va="bottom")
     cbar.outline.set_edgecolor('darkgray')
 

@@ -1,3 +1,5 @@
+__version__ = '0.8.3'
+
 from .pearson import pearson
 from .kendall import kendall
 from .spearman import spearman
