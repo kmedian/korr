@@ -1,3 +1,7 @@
+# 0.9.0 / 2021-04-08
+
+  * MIT License changed to Apache 2.0
+
 # 0.8.3 / 2020-04-08
 
   * matplotlib error corrected for corrgram
