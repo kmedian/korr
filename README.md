@@ -1,4 +1,6 @@
 [![PyPI version](https://badge.fury.io/py/korr.svg)](https://badge.fury.io/py/korr)
+[![korr](https://snyk.io/advisor/python/korr/badge.svg)](https://snyk.io/advisor/python/korr)
+
 
 # korr
 collection of utility functions for correlation analysis
