@@ -19,12 +19,11 @@ setup(name='korr',
       url='http://github.com/kmedian/korr',
       author='Ulf Hamster',
       author_email='554c46@gmail.com',
-      license='MIT',
+      license='Apache License 2.0',
       packages=['korr'],
       install_requires=[
-          'setuptools>=40.0.0',
           'numpy>=1.14.5,<2',
           'scipy>=1.1.0,<2',
           'matplotlib>=3.3.0'],
       python_requires='>=3.6',
-      zip_safe=True)
+      zip_safe=False)
