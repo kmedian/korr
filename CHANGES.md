@@ -1,3 +1,8 @@
+# 0.9.1 / 2020-04-23
+
+  * Test multiple python versions
+  * Installation problems: zip_true set to False because file import required
+
 # 0.9.0 / 2021-04-08
 
   * MIT License changed to Apache 2.0

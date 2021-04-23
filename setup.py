@@ -1,5 +1,4 @@
 from setuptools import setup
-import pypandoc
 
 
 def get_version(path):
@@ -15,7 +14,7 @@ def get_version(path):
 setup(name='korr',
       version=get_version("korr/__init__.py"),
       description='collection of utility functions for correlation analysis',
-      long_description=pypandoc.convert('README.md', 'rst'),
+      long_description='README.rst',
       url='http://github.com/kmedian/korr',
       author='Ulf Hamster',
       author_email='554c46@gmail.com',
@@ -26,4 +25,4 @@ setup(name='korr',
           'scipy>=1.1.0,<2',
           'matplotlib>=3.3.0'],
       python_requires='>=3.6',
-      zip_safe=False)
+      zip_safe=True)

@@ -1,4 +1,4 @@
-__version__ = '0.8.3'
+__version__ = '0.9.1'
 
 from .pearson import pearson
 from .kendall import kendall
