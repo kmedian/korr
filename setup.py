@@ -1,4 +1,11 @@
 from setuptools import setup
+import os
+
+
+def read(fname):
+    with open(os.path.join(os.path.dirname(__file__), fname)) as fp:
+        s = fp.read()
+    return s
 
 
 def get_version(path):
@@ -14,7 +21,7 @@ def get_version(path):
 setup(name='korr',
       version=get_version("korr/__init__.py"),
       description='collection of utility functions for correlation analysis',
-      long_description='README.rst',
+      long_description=read('README.rst'),
       url='http://github.com/kmedian/korr',
       author='Ulf Hamster',
       author_email='554c46@gmail.com',
