@@ -1,5 +1,4 @@
 import scipy.stats  # pearsonr
-import numpy as np
 
 
 def find_unrelated(x, plim=0.1, axis=0):
