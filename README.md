@@ -1,8 +1,6 @@
 [![PyPI version](https://badge.fury.io/py/korr.svg)](https://badge.fury.io/py/korr)
-[![korr](https://snyk.io/advisor/python/korr/badge.svg)](https://snyk.io/advisor/python/korr)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/kmedian/korr.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/kmedian/korr/alerts/)
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/kmedian/korr.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/kmedian/korr/context:python)
-[![deepcode](https://www.deepcode.ai/api/gh/badge?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF0Zm9ybTEiOiJnaCIsIm93bmVyMSI6ImttZWRpYW4iLCJyZXBvMSI6ImtvcnIiLCJpbmNsdWRlTGludCI6ZmFsc2UsImF1dGhvcklkIjoyOTQ1MiwiaWF0IjoxNjE5NTM3MzI1fQ.OnUWcr6UHD_jQS_bpu88meWUEhmiYA--C1Jc3QKiaAk)](https://www.deepcode.ai/app/gh/kmedian/korr/_/dashboard?utm_content=gh%2Fkmedian%2Fkorr)
 
 # korr
 collection of utility functions for correlation analysis
@@ -54,7 +52,7 @@ pip install korr
 ### Install a virtual environment
 
 ```
-python3.6 -m venv .venv
+python3.7 -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt --no-cache-dir
