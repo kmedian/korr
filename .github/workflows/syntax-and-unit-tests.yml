@@ -28,6 +28,6 @@ jobs:
     - name: Lint with flake8
       run: |
         flake8 --ignore=F401 --exclude=$(grep -v '^#' .gitignore | xargs | sed -e 's/ /,/g')
-    #- name: Unit Test with pytest
-    #  run: |
-    #    pytest
+    - name: Unit Test with pytest
+     run: |
+       pytest

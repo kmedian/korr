@@ -30,6 +30,8 @@ setup(name='korr',
       install_requires=[
           'numpy>=1.14.5,<2',
           'scipy>=1.1.0,<2',
-          'matplotlib>=3.3.0'],
-      python_requires='>=3.6',
+          'matplotlib>=3.3.0',
+          'pandas>=1.1.5,<2'
+      ],
+      python_requires='>=3.7',
       zip_safe=True)

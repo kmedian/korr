@@ -2,8 +2,12 @@ import numpy as np
 import korr
 
 
-def bootcorr(X, n_draws=30, subsample=0.7, replace=True,
-             random_state=42, corr_fn=korr.pearson):
+def bootcorr(X,
+             corr_fn=korr.pearson,
+             n_draws=30,
+             subsample=0.7,
+             replace=True,
+             random_state=42):
     """Estimate multiple correlation matrices based on
     bootstrapped samples.
 
@@ -48,7 +52,8 @@ def bootcorr(X, n_draws=30, subsample=0.7, replace=True,
     rng = set(range(len(X)))
 
     # set seed
-    np.random.seed(random_state)
+    if random_state:
+        np.random.seed(random_state)
 
     for d in range(n_draws):
         idx = np.random.choice(range(n_samples), size=n_size, replace=replace)
