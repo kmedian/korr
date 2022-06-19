@@ -65,7 +65,7 @@ pip install -r requirements-demo.txt --no-cache-dir
 
 ### Commands
 * Check syntax: `flake8 --ignore=F401`
-* Run Unit Tests: `python -W ignore -m unittest discover`
+* Run Unit Tests: `pytest`
 * Remove `.pyc` files: `find . -type f -name "*.pyc" | xargs rm`
 * Remove `__pycache__` folders: `find . -type d -name "__pycache__" | xargs rm -rf`
 
